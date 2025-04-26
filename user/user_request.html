@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Request</title>
+    <script src="user_request.js" defer></script> 
+</head>
+
+<body>
+
+    <h3>Request a Movie</h3>
+    <form>
+        <label for="mov_name">Movie:</label>
+        <input type="text" id="mov_name" name="mov_name"><br>
+
+        <label for="rel_year">Release Year: </label>
+        <select id="rel_year" name="rel_year"></select>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Requested Movie status -->
+    <h3>Requested Movies Status</h3>
+    <table id="requestedMoviesTable" border="1">
+        <thead>
+            <tr>
+                <th>Movie Name</th>
+                <th>Release Year</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody id="requestedMoviesBody"></tbody>
+    </table>
+
+</body>
+</html>

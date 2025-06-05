@@ -23,7 +23,7 @@ fetch(apiUrl)
         movies.forEach(movie => {
             const movieCard = document.createElement('div');
             movieCard.classList.add('movie');
-            const moviePoster = movie.Poster !== 'N/A' ? movie.Poster : 'https://via.placeholder.com/200x300?text=No+Image';
+            // const moviePoster = movie.Poster !== 'N/A' ? movie.Poster : 'https://via.placeholder.com/200x300?text=No+Image';
             movieCard.innerHTML = `
                 <img src="${moviePoster}" alt="${movie.Title}">
                 <h3>${movie.Title}</h3>
